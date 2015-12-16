@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  CoreDataDemo
+//
+//  Created by Robert on 15/12/16.
+//  Copyright © 2015年 Robert. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <MagicalRecord/MagicalRecord.h>
+
+#endif /* PrefixHeader_pch */
