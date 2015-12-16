@@ -10,8 +10,9 @@
 
 @implementation Person
 
+- (void)log {
+    NSLog(@"name:%@ age:%@",self.name,self.age);
+}
 // Insert code here to add functionality to your managed object subclass
-@dynamic name;
-@dynamic age;
 
 @end

@@ -12,11 +12,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Person : NSManagedObject
-@property (nonatomic, retain) NSString * name;
-@property (nonatomic, retain) NSNumber * age;
+
 // Insert code here to declare functionality of your managed object subclass
+- (void)log;
 @end
 
 NS_ASSUME_NONNULL_END
 
-//#import "Person+CoreDataProperties.h"
+#import "Person+CoreDataProperties.h"

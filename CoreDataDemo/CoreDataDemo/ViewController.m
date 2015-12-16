@@ -26,28 +26,61 @@
     person.age = @(25);
     [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
     
+    //异步insert
+    [MagicalRecord saveWithBlock:^(NSManagedObjectContext *localContext) {
+        Person *person = [Person MR_createEntityInContext:localContext];
+        person.name = @"Andy";
+        person.age = @(21);
+    } completion:^(BOOL contextDidSave, NSError *error) {
+        NSLog(@"%d,%@",contextDidSave, error);
+    }];
+    
     //查
     //查询所有
     Person *tempPerson = nil;
     
     NSArray *persons = [Person MR_findAll];
     tempPerson = persons[0];
-    NSLog(@"name:%@ age:%@",tempPerson.name,tempPerson.age);
+    [tempPerson log];
     
     //查询所有并排序
     NSArray *personSort = [Person MR_findAllSortedBy:@"age" ascending:YES];
     tempPerson = personSort[0];
-    NSLog(@"name:%@ age:%@",tempPerson.name,tempPerson.age);
+    [tempPerson log];
+    
+    //指定属性升降序
+    personSort = [Person MR_findAllSortedBy:@"name:NO,age" ascending:YES];
+    tempPerson = personSort[0];
+    [tempPerson log];
     
     //查询指定条件
-    NSArray *personAttribute = [Person MR_findByAttribute:@"age" withValue:@(25)];
-    tempPerson = personAttribute[0];
-    NSLog(@"name:%@ age:%@",tempPerson.name,tempPerson.age);
+    NSArray *personAttributes = [Person MR_findByAttribute:@"age" withValue:@(25)];
+    tempPerson = personAttributes[0];
+    [tempPerson log];
+    
+    Person *personAttribute = [Person MR_findFirstByAttribute:@"age" withValue:@(25)];
+    tempPerson = personAttribute;
+    [tempPerson log];
+    
+    NSPredicate *peopleFilter = [NSPredicate predicateWithFormat:@"age IN %@", @[@(23), @(26)]];
+    NSArray *people = [Person MR_findAllWithPredicate:peopleFilter];
+    tempPerson = people[0];
+    [tempPerson log];
     
     //查询首个
     Person *firstPerson = [Person MR_findFirst];
     tempPerson = firstPerson;
-    NSLog(@"name:%@ age:%@",tempPerson.name,tempPerson.age);
+    [tempPerson log];
+    
+    //查询数量
+    NSUInteger count = [Person MR_countOfEntities];
+    NSLog(@"count:%d",count);
+    
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name = %@", @"Robert"];
+    NSNumber *mostAge  = [Person MR_aggregateOperation:@"max:"
+                                                onAttribute:@"age"
+                                              withPredicate:predicate];
+    NSLog(@"%d",[mostAge integerValue]);
     
     //改
     firstPerson.age = @(26);
@@ -55,10 +88,13 @@
     
     Person *updatesPerson = [Person MR_findFirst];
     tempPerson = updatesPerson;
-    NSLog(@"name:%@ age:%@",tempPerson.name,tempPerson.age);
+    [tempPerson log];
     
     //删
     [updatesPerson MR_deleteEntity];
+    [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
+    
+    [Person MR_truncateAll];
     [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
 }
 
