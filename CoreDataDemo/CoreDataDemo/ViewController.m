@@ -23,38 +23,43 @@
     
     //增
     Home *home = [Home MR_createEntity];
+    Person *person = [Person MR_createEntity];
     home.name = @"Beijing";
     home.address = @"Beijing. China";
-    
-    Person *person = [Person MR_createEntity];
+    home.person = person;
     person.name = @"Robert";
     person.age = @(25);
     person.home = home;
     
     [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
     
-    dispatch_async(dispatch_get_main_queue(), ^{
-        Home *home = [Home MR_createEntity];
-        home.name = @"Shanghai";
-        home.address = @"Shanghai. China";
-        
-        Person *person = [Person MR_createEntity];
-        person.name = @"Bob";
-        person.age = @(21);
-        person.home = home;
-        
-        [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
-    });
-    
     //异步insert
     [MagicalRecord saveWithBlock:^(NSManagedObjectContext *localContext) {
+        Home *home = [Home MR_createEntityInContext:localContext];
         Person *person = [Person MR_createEntityInContext:localContext];
+        home.name = @"Beijing";
+        home.address = @"Beijing. China";
+        home.person = person;
         person.name = @"Andy";
         person.age = @(21);
+        person.home = home;
     } completion:^(BOOL contextDidSave, NSError *error) {
         NSLog(@"%d,%@",contextDidSave, error);
     }];
     
+    NSDictionary *personDic = @{
+                                @"name":@"Bob",
+                                @"age":@(20),
+                                @"home":@{
+                                            @"name":@"Shanghai",
+                                            @"address":@"Shanghai.China"
+                                        }
+                                };
+    
+    [MagicalRecord saveWithBlock:^(NSManagedObjectContext *localContext) {
+        Person *importedPerson = [Person MR_importFromObject:personDic inContext:localContext];
+        [importedPerson log];
+    }];
     //查
     //查询所有
     Person *tempPerson = nil;
@@ -82,7 +87,7 @@
     tempPerson = personAttribute;
     [tempPerson log];
     
-    NSPredicate *peopleFilter = [NSPredicate predicateWithFormat:@"age IN %@", @[@(21), @(25)]];
+    NSPredicate *peopleFilter = [NSPredicate predicateWithFormat:@"age IN %@", @[@(23), @(25)]];
     NSArray *people = [Person MR_findAllWithPredicate:peopleFilter];
     tempPerson = people[0];
     [tempPerson log];
@@ -111,11 +116,11 @@
     [tempPerson log];
     
     //删
-    [updatesPerson MR_deleteEntity];
-    [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
+//    [updatesPerson MR_deleteEntity];
+//    [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
     
-    [Person MR_truncateAll];
-    [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
+//    [Person MR_truncateAll];
+//    [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
 }
 
 - (void)didReceiveMemoryWarning {
