@@ -1,18 +1,16 @@
 //
-//  Person.m
+//  Home.m
 //  CoreDataDemo
 //
 //  Created by Robert on 15/12/18.
 //  Copyright © 2015年 Robert. All rights reserved.
 //
 
-#import "Person.h"
 #import "Home.h"
+#import "Person.h"
 
-@implementation Person
+@implementation Home
 
 // Insert code here to add functionality to your managed object subclass
-- (void)log {
-    NSLog(@"name:%@ age:%@ homeName:%@ homeAddress:%@",self.name,self.age,self.home.name,self.home.address);
-}
+
 @end

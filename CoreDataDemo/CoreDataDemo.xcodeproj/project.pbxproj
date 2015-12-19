@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0C9323D683F95525E6352A64 /* libPods-CoreDataDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F3C3132FADD5C6138AE58B7 /* libPods-CoreDataDemo.a */; };
+		573494C61C241E9C00A16AC4 /* Home+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 573494C31C241E9C00A16AC4 /* Home+CoreDataProperties.m */; };
+		573494C71C241E9C00A16AC4 /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = 573494C51C241E9C00A16AC4 /* Home.m */; };
+		573494CC1C241F7900A16AC4 /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 573494C91C241F7900A16AC4 /* Person+CoreDataProperties.m */; };
+		573494CD1C241F7900A16AC4 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 573494CB1C241F7900A16AC4 /* Person.m */; };
 		57B9A1DE1C2132D1002AFD70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B9A1DD1C2132D1002AFD70 /* main.m */; };
 		57B9A1E11C2132D1002AFD70 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B9A1E01C2132D1002AFD70 /* AppDelegate.m */; };
 		57B9A1E41C2132D1002AFD70 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B9A1E31C2132D1002AFD70 /* ViewController.m */; };
@@ -17,8 +21,6 @@
 		57B9A1EF1C2132D1002AFD70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57B9A1ED1C2132D1002AFD70 /* LaunchScreen.storyboard */; };
 		57B9A1FA1C2132D1002AFD70 /* CoreDataDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B9A1F91C2132D1002AFD70 /* CoreDataDemoTests.m */; };
 		57B9A2051C2132D1002AFD70 /* CoreDataDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B9A2041C2132D1002AFD70 /* CoreDataDemoUITests.m */; };
-		57B9A2171C2136EF002AFD70 /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B9A2141C2136EF002AFD70 /* Person+CoreDataProperties.m */; };
-		57B9A2181C2136EF002AFD70 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B9A2161C2136EF002AFD70 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,14 @@
 /* Begin PBXFileReference section */
 		0D8B39EA8DCB9083CE6128DF /* Pods-CoreDataDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreDataDemo/Pods-CoreDataDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		0F3C3132FADD5C6138AE58B7 /* libPods-CoreDataDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoreDataDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		573494C21C241E9C00A16AC4 /* Home+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Home+CoreDataProperties.h"; sourceTree = "<group>"; };
+		573494C31C241E9C00A16AC4 /* Home+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Home+CoreDataProperties.m"; sourceTree = "<group>"; };
+		573494C41C241E9C00A16AC4 /* Home.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
+		573494C51C241E9C00A16AC4 /* Home.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Home.m; sourceTree = "<group>"; };
+		573494C81C241F7900A16AC4 /* Person+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+CoreDataProperties.h"; sourceTree = "<group>"; };
+		573494C91C241F7900A16AC4 /* Person+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataProperties.m"; sourceTree = "<group>"; };
+		573494CA1C241F7900A16AC4 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		573494CB1C241F7900A16AC4 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		57B9A1D91C2132D1002AFD70 /* CoreDataDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B9A1DD1C2132D1002AFD70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		57B9A1DF1C2132D1002AFD70 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,10 +69,6 @@
 		57B9A2041C2132D1002AFD70 /* CoreDataDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataDemoUITests.m; sourceTree = "<group>"; };
 		57B9A2061C2132D1002AFD70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57B9A2121C2134DB002AFD70 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		57B9A2131C2136EF002AFD70 /* Person+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+CoreDataProperties.h"; sourceTree = "<group>"; };
-		57B9A2141C2136EF002AFD70 /* Person+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataProperties.m"; sourceTree = "<group>"; };
-		57B9A2151C2136EF002AFD70 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		57B9A2161C2136EF002AFD70 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		D243E4FD3E513C157566AE02 /* Pods-CoreDataDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreDataDemo/Pods-CoreDataDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,10 +135,14 @@
 				57B9A1E01C2132D1002AFD70 /* AppDelegate.m */,
 				57B9A1E21C2132D1002AFD70 /* ViewController.h */,
 				57B9A1E31C2132D1002AFD70 /* ViewController.m */,
-				57B9A2151C2136EF002AFD70 /* Person.h */,
-				57B9A2161C2136EF002AFD70 /* Person.m */,
-				57B9A2131C2136EF002AFD70 /* Person+CoreDataProperties.h */,
-				57B9A2141C2136EF002AFD70 /* Person+CoreDataProperties.m */,
+				573494C41C241E9C00A16AC4 /* Home.h */,
+				573494C51C241E9C00A16AC4 /* Home.m */,
+				573494C21C241E9C00A16AC4 /* Home+CoreDataProperties.h */,
+				573494C31C241E9C00A16AC4 /* Home+CoreDataProperties.m */,
+				573494CA1C241F7900A16AC4 /* Person.h */,
+				573494CB1C241F7900A16AC4 /* Person.m */,
+				573494C81C241F7900A16AC4 /* Person+CoreDataProperties.h */,
+				573494C91C241F7900A16AC4 /* Person+CoreDataProperties.m */,
 				57B9A1E51C2132D1002AFD70 /* Main.storyboard */,
 				57B9A1EB1C2132D1002AFD70 /* Assets.xcassets */,
 				57B9A1ED1C2132D1002AFD70 /* LaunchScreen.storyboard */,
@@ -360,12 +370,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57B9A2181C2136EF002AFD70 /* Person.m in Sources */,
 				57B9A1E41C2132D1002AFD70 /* ViewController.m in Sources */,
+				573494C71C241E9C00A16AC4 /* Home.m in Sources */,
+				573494CD1C241F7900A16AC4 /* Person.m in Sources */,
 				57B9A1EA1C2132D1002AFD70 /* CoreDataDemo.xcdatamodeld in Sources */,
 				57B9A1E11C2132D1002AFD70 /* AppDelegate.m in Sources */,
-				57B9A2171C2136EF002AFD70 /* Person+CoreDataProperties.m in Sources */,
 				57B9A1DE1C2132D1002AFD70 /* main.m in Sources */,
+				573494CC1C241F7900A16AC4 /* Person+CoreDataProperties.m in Sources */,
+				573494C61C241E9C00A16AC4 /* Home+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

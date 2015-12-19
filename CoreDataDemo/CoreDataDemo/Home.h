@@ -1,5 +1,5 @@
 //
-//  Person.h
+//  Home.h
 //  CoreDataDemo
 //
 //  Created by Robert on 15/12/18.
@@ -9,16 +9,16 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class Home;
+@class Person;
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Person : NSManagedObject
+@interface Home : NSManagedObject
 
 // Insert code here to declare functionality of your managed object subclass
-- (void)log;
+
 @end
 
 NS_ASSUME_NONNULL_END
 
-#import "Person+CoreDataProperties.h"
+#import "Home+CoreDataProperties.h"

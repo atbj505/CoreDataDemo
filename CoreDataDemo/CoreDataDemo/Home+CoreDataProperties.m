@@ -1,5 +1,5 @@
 //
-//  Person+CoreDataProperties.m
+//  Home+CoreDataProperties.m
 //  CoreDataDemo
 //
 //  Created by Robert on 15/12/18.
@@ -9,12 +9,12 @@
 //  to delete and recreate this implementation file for your updated model.
 //
 
-#import "Person+CoreDataProperties.h"
+#import "Home+CoreDataProperties.h"
 
-@implementation Person (CoreDataProperties)
+@implementation Home (CoreDataProperties)
 
-@dynamic age;
 @dynamic name;
-@dynamic home;
+@dynamic address;
+@dynamic person;
 
 @end

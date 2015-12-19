@@ -1,5 +1,5 @@
 //
-//  Person+CoreDataProperties.h
+//  Home+CoreDataProperties.h
 //  CoreDataDemo
 //
 //  Created by Robert on 15/12/18.
@@ -9,15 +9,15 @@
 //  to delete and recreate this implementation file for your updated model.
 //
 
-#import "Person.h"
+#import "Home.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Person (CoreDataProperties)
+@interface Home (CoreDataProperties)
 
-@property (nullable, nonatomic, retain) NSNumber *age;
 @property (nullable, nonatomic, retain) NSString *name;
-@property (nullable, nonatomic, retain) Home *home;
+@property (nullable, nonatomic, retain) NSString *address;
+@property (nullable, nonatomic, retain) Person *person;
 
 @end
 

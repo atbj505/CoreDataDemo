@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Person.h"
+#import "Home.h"
 
 @interface ViewController ()
 
@@ -21,10 +22,29 @@
     NSLog(@"%@",NSHomeDirectory());
     
     //增
+    Home *home = [Home MR_createEntity];
+    home.name = @"Beijing";
+    home.address = @"Beijing. China";
+    
     Person *person = [Person MR_createEntity];
     person.name = @"Robert";
     person.age = @(25);
+    person.home = home;
+    
     [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        Home *home = [Home MR_createEntity];
+        home.name = @"Shanghai";
+        home.address = @"Shanghai. China";
+        
+        Person *person = [Person MR_createEntity];
+        person.name = @"Bob";
+        person.age = @(21);
+        person.home = home;
+        
+        [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
+    });
     
     //异步insert
     [MagicalRecord saveWithBlock:^(NSManagedObjectContext *localContext) {
@@ -62,7 +82,7 @@
     tempPerson = personAttribute;
     [tempPerson log];
     
-    NSPredicate *peopleFilter = [NSPredicate predicateWithFormat:@"age IN %@", @[@(23), @(26)]];
+    NSPredicate *peopleFilter = [NSPredicate predicateWithFormat:@"age IN %@", @[@(21), @(25)]];
     NSArray *people = [Person MR_findAllWithPredicate:peopleFilter];
     tempPerson = people[0];
     [tempPerson log];
