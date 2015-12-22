@@ -1,4 +1,4 @@
-//
+ //
 //  ViewController.m
 //  CoreDataDemo
 //
@@ -21,6 +21,23 @@
     
     NSLog(@"%@",NSHomeDirectory());
     
+    NSDictionary *personDic = @{
+                                @"name":@"Bob",
+                                @"age":@(20),
+                                @"home":@{
+                                            @"name":@"Shanghai",
+                                            @"address":@"Shanghai.China"
+                                        }
+                                };
+    
+    [MagicalRecord saveWithBlock:^(NSManagedObjectContext *localContext) {
+        Person *importedPerson = [Person MR_importFromObject:personDic inContext:localContext];
+        [importedPerson log];
+        Person *person = [Person MR_findFirst];
+        NSLog(@"%@",person.home[0]);
+    }];
+    
+/*
     //增
     Home *home = [Home MR_createEntity];
     Person *person = [Person MR_createEntity];
@@ -47,19 +64,6 @@
         NSLog(@"%d,%@",contextDidSave, error);
     }];
     
-    NSDictionary *personDic = @{
-                                @"name":@"Bob",
-                                @"age":@(20),
-                                @"home":@{
-                                            @"name":@"Shanghai",
-                                            @"address":@"Shanghai.China"
-                                        }
-                                };
-    
-    [MagicalRecord saveWithBlock:^(NSManagedObjectContext *localContext) {
-        Person *importedPerson = [Person MR_importFromObject:personDic inContext:localContext];
-        [importedPerson log];
-    }];
     //查
     //查询所有
     Person *tempPerson = nil;
@@ -114,13 +118,14 @@
     Person *updatesPerson = [Person MR_findFirst];
     tempPerson = updatesPerson;
     [tempPerson log];
-    
+
     //删
-//    [updatesPerson MR_deleteEntity];
-//    [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
+    [updatesPerson MR_deleteEntity];
+    [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
     
-//    [Person MR_truncateAll];
-//    [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
+    [Person MR_truncateAll];
+    [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
+*/
 }
 
 - (void)didReceiveMemoryWarning {

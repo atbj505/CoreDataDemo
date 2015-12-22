@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nullable, nonatomic, retain) NSNumber *age;
 @property (nullable, nonatomic, retain) NSString *name;
-@property (nullable, nonatomic, retain) Home *home;
+@property (nullable, nonatomic, retain) NSArray *home;
 
 @end
 

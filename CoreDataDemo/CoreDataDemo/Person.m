@@ -13,6 +13,6 @@
 
 // Insert code here to add functionality to your managed object subclass
 - (void)log {
-    NSLog(@"name:%@ age:%@ homeName:%@ homeAddress:%@",self.name,self.age,self.home.name,self.home.address);
+    NSLog(@"name:%@ age:%@ home:%@",self.name,self.age,self.home);
 }
 @end
