@@ -5,6 +5,7 @@
 
 target 'CoreDataDemo' do
 pod 'MagicalRecord'
+pod 'YYModel'
 end
 
 target 'CoreDataDemoTests' do
