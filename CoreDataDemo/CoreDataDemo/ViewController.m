@@ -21,20 +21,44 @@
     
     NSLog(@"%@",NSHomeDirectory());
     
-    NSDictionary *personDic = @{
-                                @"name":@"Bob",
-                                @"age":@(20),
-                                @"home":@{
-                                            @"name":@"Shanghai",
-                                            @"address":@"Shanghai.China"
-                                        }
-                                };
+    //导入字典
+//    NSDictionary *personDic = @{
+//                                @"name":@"Bob",
+//                                @"age":@(20),
+//                                @"home":@{
+//                                            @"name":@"Shanghai",
+//                                            @"address":@"Shanghai.China"
+//                                        }
+//                                };
+//    
+//    [MagicalRecord saveWithBlock:^(NSManagedObjectContext *localContext) {
+//        Person *importedPerson = [Person MR_importFromObject:personDic inContext:localContext];
+//        [importedPerson log];
+//        Person *person = [Person MR_findFirst];
+//        NSLog(@"%@",person.home);
+//    }];
     
+    //导入数组
+    NSArray *personArray = @[@{
+                                 @"name":@"Jack",
+                                 @"age":@(20),
+                                 @"home":@{
+                                         @"name":@"Shanghai",
+                                         @"address":@"Shanghai.China"
+                                         }
+                                 },
+                             @{
+                                 @"name":@"alice",
+                                 @"age":@(21),
+                                 @"home":@{
+                                         @"name":@"Beijing",
+                                         @"address":@"Beijing.China"
+                                         }}];
     [MagicalRecord saveWithBlock:^(NSManagedObjectContext *localContext) {
-        Person *importedPerson = [Person MR_importFromObject:personDic inContext:localContext];
-        [importedPerson log];
-        Person *person = [Person MR_findFirst];
-        NSLog(@"%@",person.home[0]);
+        NSArray *importedPersons = [Person MR_importFromArray:personArray inContext:localContext];
+        [importedPersons enumerateObjectsUsingBlock:^(Person* obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            [obj log];
+        }];
     }];
     
 /*
@@ -63,7 +87,7 @@
     } completion:^(BOOL contextDidSave, NSError *error) {
         NSLog(@"%d,%@",contextDidSave, error);
     }];
-    
+ 
     //查
     //查询所有
     Person *tempPerson = nil;
@@ -126,11 +150,6 @@
     [Person MR_truncateAll];
     [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
 */
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
