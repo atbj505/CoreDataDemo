@@ -1,15 +1,34 @@
 PODS:
+  - AFNetworking (3.0.4):
+    - AFNetworking/NSURLSession (= 3.0.4)
+    - AFNetworking/Reachability (= 3.0.4)
+    - AFNetworking/Security (= 3.0.4)
+    - AFNetworking/Serialization (= 3.0.4)
+    - AFNetworking/UIKit (= 3.0.4)
+  - AFNetworking/NSURLSession (3.0.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.0.4)
+  - AFNetworking/Security (3.0.4)
+  - AFNetworking/Serialization (3.0.4)
+  - AFNetworking/UIKit (3.0.4):
+    - AFNetworking/NSURLSession
   - MagicalRecord (2.3.0)
-  - YYModel (0.9.12)
+  - Mantle (2.0.6):
+    - Mantle/extobjc (= 2.0.6)
+  - Mantle/extobjc (2.0.6)
 
 DEPENDENCIES:
+  - AFNetworking
   - MagicalRecord
-  - YYModel
+  - Mantle
 
 SPEC CHECKSUMS:
+  AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
   MagicalRecord: 89eb7d7ead39fb37f01c3d010665ee94d17f8dba
-  YYModel: 33a27f41a995f4c36ff8178421bac9f221a9c7ea
+  Mantle: 299966b00759634931699f69cb6a30b9239b944d
 
-PODFILE CHECKSUM: 0c461041a913593f4ac811e659be55b8a55ae379
+PODFILE CHECKSUM: 7bf2c34be698b8bf9b0c604a4686323a8b9cf737
 
 COCOAPODS: 1.0.0.beta.3

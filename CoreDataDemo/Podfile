@@ -5,7 +5,9 @@
 
 target 'CoreDataDemo' do
 pod 'MagicalRecord'
-pod 'YYModel'
+pod 'AFNetworking'
+pod 'Mantle'
+
 end
 
 target 'CoreDataDemoTests' do
