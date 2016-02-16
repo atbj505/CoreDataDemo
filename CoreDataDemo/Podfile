@@ -7,7 +7,7 @@ target 'CoreDataDemo' do
 pod 'MagicalRecord'
 pod 'AFNetworking'
 pod 'Mantle'
-
+pod 'libextobjc'
 end
 
 target 'CoreDataDemoTests' do

@@ -12,6 +12,8 @@
 		573494C71C241E9C00A16AC4 /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = 573494C51C241E9C00A16AC4 /* Home.m */; };
 		573494CC1C241F7900A16AC4 /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 573494C91C241F7900A16AC4 /* Person+CoreDataProperties.m */; };
 		573494CD1C241F7900A16AC4 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 573494CB1C241F7900A16AC4 /* Person.m */; };
+		5754D0751C72FEA100709C4E /* EXTRuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5754D0711C72FEA100709C4E /* EXTRuntimeExtensions.m */; };
+		5754D0761C72FEA100709C4E /* MTLManagedObjectAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5754D0741C72FEA100709C4E /* MTLManagedObjectAdapter.m */; };
 		57B9A1DE1C2132D1002AFD70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B9A1DD1C2132D1002AFD70 /* main.m */; };
 		57B9A1E11C2132D1002AFD70 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B9A1E01C2132D1002AFD70 /* AppDelegate.m */; };
 		57B9A1E41C2132D1002AFD70 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B9A1E31C2132D1002AFD70 /* ViewController.m */; };
@@ -54,6 +56,12 @@
 		573494C91C241F7900A16AC4 /* Person+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataProperties.m"; sourceTree = "<group>"; };
 		573494CA1C241F7900A16AC4 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		573494CB1C241F7900A16AC4 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		5754D06F1C72FEA100709C4E /* EXTKeyPathCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTKeyPathCoding.h; sourceTree = "<group>"; };
+		5754D0701C72FEA100709C4E /* EXTRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTRuntimeExtensions.h; sourceTree = "<group>"; };
+		5754D0711C72FEA100709C4E /* EXTRuntimeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTRuntimeExtensions.m; sourceTree = "<group>"; };
+		5754D0721C72FEA100709C4E /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
+		5754D0731C72FEA100709C4E /* MTLManagedObjectAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLManagedObjectAdapter.h; sourceTree = "<group>"; };
+		5754D0741C72FEA100709C4E /* MTLManagedObjectAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLManagedObjectAdapter.m; sourceTree = "<group>"; };
 		57B9A1D91C2132D1002AFD70 /* CoreDataDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B9A1DD1C2132D1002AFD70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		57B9A1DF1C2132D1002AFD70 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -121,6 +129,27 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		5754D06D1C72FEA100709C4E /* MTLManagedObjectAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				5754D06E1C72FEA100709C4E /* extobjc */,
+				5754D0731C72FEA100709C4E /* MTLManagedObjectAdapter.h */,
+				5754D0741C72FEA100709C4E /* MTLManagedObjectAdapter.m */,
+			);
+			path = MTLManagedObjectAdapter;
+			sourceTree = "<group>";
+		};
+		5754D06E1C72FEA100709C4E /* extobjc */ = {
+			isa = PBXGroup;
+			children = (
+				5754D06F1C72FEA100709C4E /* EXTKeyPathCoding.h */,
+				5754D0701C72FEA100709C4E /* EXTRuntimeExtensions.h */,
+				5754D0711C72FEA100709C4E /* EXTRuntimeExtensions.m */,
+				5754D0721C72FEA100709C4E /* metamacros.h */,
+			);
+			path = extobjc;
+			sourceTree = "<group>";
+		};
 		57B9A1D01C2132D1002AFD70 = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +175,7 @@
 		57B9A1DB1C2132D1002AFD70 /* CoreDataDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5754D06D1C72FEA100709C4E /* MTLManagedObjectAdapter */,
 				57B9A1DF1C2132D1002AFD70 /* AppDelegate.h */,
 				57B9A1E01C2132D1002AFD70 /* AppDelegate.m */,
 				57B9A1E21C2132D1002AFD70 /* ViewController.h */,
@@ -466,10 +496,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5754D0761C72FEA100709C4E /* MTLManagedObjectAdapter.m in Sources */,
 				57B9A1E41C2132D1002AFD70 /* ViewController.m in Sources */,
 				573494C71C241E9C00A16AC4 /* Home.m in Sources */,
 				573494CD1C241F7900A16AC4 /* Person.m in Sources */,
 				57B9A1EA1C2132D1002AFD70 /* CoreDataDemo.xcdatamodeld in Sources */,
+				5754D0751C72FEA100709C4E /* EXTRuntimeExtensions.m in Sources */,
 				57B9A1E11C2132D1002AFD70 /* AppDelegate.m in Sources */,
 				57B9A1DE1C2132D1002AFD70 /* main.m in Sources */,
 				573494CC1C241F7900A16AC4 /* Person+CoreDataProperties.m in Sources */,
