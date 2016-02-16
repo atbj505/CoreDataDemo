@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Person.h"
 #import "Home.h"
+#import "PersonModel.h"
 
 @interface ViewController ()
 
@@ -54,12 +55,26 @@
                                          @"name":@"Beijing",
                                          @"address":@"Beijing.China"
                                          }}];
+    
+//    [MagicalRecord saveWithBlock:^(NSManagedObjectContext *localContext) {
+//        NSArray *importedPersons = [Person MR_importFromArray:personArray inContext:localContext];
+//        [importedPersons enumerateObjectsUsingBlock:^(Person* obj, NSUInteger idx, BOOL * _Nonnull stop) {
+//            [obj log];
+//        }];
+//    }];
+    
+    NSError *error = nil;
+    
+    NSArray *persons = [MTLJSONAdapter modelsOfClass:[PersonModel class] fromJSONArray:personArray error:&error];
+    
     [MagicalRecord saveWithBlock:^(NSManagedObjectContext *localContext) {
-        NSArray *importedPersons = [Person MR_importFromArray:personArray inContext:localContext];
-        [importedPersons enumerateObjectsUsingBlock:^(Person* obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            [obj log];
-        }];
-    }];
+        for (PersonModel *person in persons) {
+            NSError *error = nil;
+            [MTLManagedObjectAdapter managedObjectFromModel:person insertingIntoContext:localContext error:&error];
+        }
+    } completion:^(BOOL success, NSError *error) {
+        NSLog(@"%lu", (unsigned long)[Person MR_findAll].count);
+    }];;
     
 /*
     //增

@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		5754D0771C73122600709C4E /* CoreDataDemoAgg */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5754D07A1C73122600709C4E /* Build configuration list for PBXAggregateTarget "CoreDataDemoAgg" */;
+			buildPhases = (
+				5754D07B1C73122C00709C4E /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = CoreDataDemoAgg;
+			productName = CoreDataDemoAgg;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		0442A39E105B941B5C05F3EF /* libPods-CoreDataDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B3F868B46E2FCEC051BC925 /* libPods-CoreDataDemoTests.a */; };
 		573494C61C241E9C00A16AC4 /* Home+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 573494C31C241E9C00A16AC4 /* Home+CoreDataProperties.m */; };
@@ -14,6 +28,8 @@
 		573494CD1C241F7900A16AC4 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 573494CB1C241F7900A16AC4 /* Person.m */; };
 		5754D0751C72FEA100709C4E /* EXTRuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5754D0711C72FEA100709C4E /* EXTRuntimeExtensions.m */; };
 		5754D0761C72FEA100709C4E /* MTLManagedObjectAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5754D0741C72FEA100709C4E /* MTLManagedObjectAdapter.m */; };
+		5754D07E1C731D7000709C4E /* HomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5754D07D1C731D7000709C4E /* HomeModel.m */; };
+		5754D0811C731E1900709C4E /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5754D0801C731E1900709C4E /* PersonModel.m */; };
 		57B9A1DE1C2132D1002AFD70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B9A1DD1C2132D1002AFD70 /* main.m */; };
 		57B9A1E11C2132D1002AFD70 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B9A1E01C2132D1002AFD70 /* AppDelegate.m */; };
 		57B9A1E41C2132D1002AFD70 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B9A1E31C2132D1002AFD70 /* ViewController.m */; };
@@ -62,6 +78,10 @@
 		5754D0721C72FEA100709C4E /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
 		5754D0731C72FEA100709C4E /* MTLManagedObjectAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLManagedObjectAdapter.h; sourceTree = "<group>"; };
 		5754D0741C72FEA100709C4E /* MTLManagedObjectAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLManagedObjectAdapter.m; sourceTree = "<group>"; };
+		5754D07C1C731D7000709C4E /* HomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeModel.h; sourceTree = "<group>"; };
+		5754D07D1C731D7000709C4E /* HomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeModel.m; sourceTree = "<group>"; };
+		5754D07F1C731E1900709C4E /* PersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonModel.h; sourceTree = "<group>"; };
+		5754D0801C731E1900709C4E /* PersonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonModel.m; sourceTree = "<group>"; };
 		57B9A1D91C2132D1002AFD70 /* CoreDataDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B9A1DD1C2132D1002AFD70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		57B9A1DF1C2132D1002AFD70 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -180,10 +200,14 @@
 				57B9A1E01C2132D1002AFD70 /* AppDelegate.m */,
 				57B9A1E21C2132D1002AFD70 /* ViewController.h */,
 				57B9A1E31C2132D1002AFD70 /* ViewController.m */,
+				5754D07C1C731D7000709C4E /* HomeModel.h */,
+				5754D07D1C731D7000709C4E /* HomeModel.m */,
 				573494C41C241E9C00A16AC4 /* Home.h */,
 				573494C51C241E9C00A16AC4 /* Home.m */,
 				573494C21C241E9C00A16AC4 /* Home+CoreDataProperties.h */,
 				573494C31C241E9C00A16AC4 /* Home+CoreDataProperties.m */,
+				5754D07F1C731E1900709C4E /* PersonModel.h */,
+				5754D0801C731E1900709C4E /* PersonModel.m */,
 				573494CA1C241F7900A16AC4 /* Person.h */,
 				573494CB1C241F7900A16AC4 /* Person.m */,
 				573494C81C241F7900A16AC4 /* Person+CoreDataProperties.h */,
@@ -308,8 +332,12 @@
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = Robert;
 				TargetAttributes = {
+					5754D0771C73122600709C4E = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
 					57B9A1D81C2132D1002AFD70 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = FJXM979Q77;
 					};
 					57B9A1F41C2132D1002AFD70 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -337,6 +365,7 @@
 				57B9A1D81C2132D1002AFD70 /* CoreDataDemo */,
 				57B9A1F41C2132D1002AFD70 /* CoreDataDemoTests */,
 				57B9A1FF1C2132D1002AFD70 /* CoreDataDemoUITests */,
+				5754D0771C73122600709C4E /* CoreDataDemoAgg */,
 			);
 		};
 /* End PBXProject section */
@@ -398,6 +427,19 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
+		};
+		5754D07B1C73122C00709C4E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#import path\nexport PATH=${PATH}:/usr/local/bin\n#import what we have in bash_profile\nsource ~/.bash_profile\n#check for oclint\nhash oclint &> /dev/null\nif [ $? -eq 1 ]; then\necho >&2 \"oclint not found, analyzing stopped\"\nexit 1\nfi\n\nhash xctool &> /dev/null\nif [ $? -eq 1 ]; then\necho >&2 \"xctool not found, analyzing stopped\"\nexit 1\nfi\n\ncd ${SRCROOT}\nxctool -workspace CoreDataDemo.xcworkspace -scheme CoreDataDemo clean\nxctool -workspace CoreDataDemo.xcworkspace -scheme CoreDataDemo -reporter json-compilation-database:compile_commands.json build\noclint-json-compilation-database \\\n-e Pods \\\n-- -rc=LONG_LINE=100 \\\n-rc=NCSS_METHOD=60 \\\n-rc=MINIMUM_CASES_IN_SWITCH=1 \\\n| sed 's/\\(.*\\.\\m\\{1,2\\}:[0-9]*:[0-9]*:\\)/\\1 warning:/'";
 		};
 		647A8DCB6F7F582FDFAA6A49 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -496,6 +538,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5754D0811C731E1900709C4E /* PersonModel.m in Sources */,
 				5754D0761C72FEA100709C4E /* MTLManagedObjectAdapter.m in Sources */,
 				57B9A1E41C2132D1002AFD70 /* ViewController.m in Sources */,
 				573494C71C241E9C00A16AC4 /* Home.m in Sources */,
@@ -504,6 +547,7 @@
 				5754D0751C72FEA100709C4E /* EXTRuntimeExtensions.m in Sources */,
 				57B9A1E11C2132D1002AFD70 /* AppDelegate.m in Sources */,
 				57B9A1DE1C2132D1002AFD70 /* main.m in Sources */,
+				5754D07E1C731D7000709C4E /* HomeModel.m in Sources */,
 				573494CC1C241F7900A16AC4 /* Person+CoreDataProperties.m in Sources */,
 				573494C61C241E9C00A16AC4 /* Home+CoreDataProperties.m in Sources */,
 			);
@@ -560,6 +604,20 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5754D0781C73122600709C4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5754D0791C73122600709C4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		57B9A2071C2132D1002AFD70 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -645,6 +703,7 @@
 			baseConfigurationReference = 41C33F338685A45BFCEA7A32 /* Pods-CoreDataDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = CoreDataDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = CoreDataDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -658,6 +717,7 @@
 			baseConfigurationReference = 347CD1E75709E599DEB00E29 /* Pods-CoreDataDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = CoreDataDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = CoreDataDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -721,6 +781,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5754D07A1C73122600709C4E /* Build configuration list for PBXAggregateTarget "CoreDataDemoAgg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5754D0781C73122600709C4E /* Debug */,
+				5754D0791C73122600709C4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		57B9A1D41C2132D1002AFD70 /* Build configuration list for PBXProject "CoreDataDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
