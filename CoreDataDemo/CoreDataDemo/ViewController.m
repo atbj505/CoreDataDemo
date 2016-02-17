@@ -76,6 +76,12 @@
         NSLog(@"%lu", (unsigned long)[Person MR_findAll].count);
     }];;
     
+    
+    __block NSArray *globalArray;
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        globalArray = [Person MR_findAll];
+    });
+    
 /*
     //增
     Home *home = [Home MR_createEntity];
