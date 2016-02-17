@@ -82,6 +82,7 @@
 		5754D08B1C74233D00709C4E /* _Home.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Home.m; sourceTree = "<group>"; };
 		5754D08C1C74233D00709C4E /* _Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Person.h; sourceTree = "<group>"; };
 		5754D08D1C74233D00709C4E /* _Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Person.m; sourceTree = "<group>"; };
+		5754D0931C7450EE00709C4E /* CoreDataDemo 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CoreDataDemo 2.xcdatamodel"; sourceTree = "<group>"; };
 		57B9A1D91C2132D1002AFD70 /* CoreDataDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B9A1DD1C2132D1002AFD70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		57B9A1DF1C2132D1002AFD70 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -477,7 +478,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "MODELS_DIR=\"${PROJECT_DIR}/$PROJECT_NAME\"\nDATA_MODEL_PACKAGE=\"$MODELS_DIR/CoreDataDemo.xcdatamodeld/CoreDataDemo.xcdatamodel\"\n# - 替换相应的 xxxxx.xcdatamodeld名称\n\nif [ -x /usr/local/bin/mogenerator ]; then\necho \"mogenerator exists in /usr/local/bin path\";\nMOGENERATOR_DIR=\"/usr/local/bin\";\nelif [ -x /usr/bin/mogenerator ]; then\necho \"mogenerator exists in /usr/bin path\";\nMOGENERATOR_DIR=\"/usr/bin\";\nelse\necho \"mogenerator not found\"; exit 1;\nfi\n# $MOGENERATOR_DIR/mogenerator -m \"$DATA_MODEL_PACKAGE\" -M \"$MODELS_DIR/CoreData/Machine/\" -H \"$MODELS_DIR/CoreData/Human/\"\n# 如果是ARC工程，加上 --template-var arc=true就行了，即mogenerator命令换成：\n$MOGENERATOR_DIR/mogenerator --template-var arc=true -m \"$DATA_MODEL_PACKAGE\" -M \"$MODELS_DIR/CoreData/Machine/\" -H \"$MODELS_DIR/CoreData/Human/\"";
+			shellScript = "MODELS_DIR=\"${PROJECT_DIR}/$PROJECT_NAME\"\nDATA_MODEL_PACKAGE=\"$MODELS_DIR/CoreDataDemo.xcdatamodeld\"\n# - 替换相应的 xxxxx.xcdatamodeld名称\n\nCURRENT_VERSION=`/usr/libexec/PlistBuddy \"$DATA_MODEL_PACKAGE/.xccurrentversion\" -c 'print _XCCurrentVersionName'`\n\n\nif [ -x /usr/local/bin/mogenerator ]; then\necho \"mogenerator exists in /usr/local/bin path\";\nMOGENERATOR_DIR=\"/usr/local/bin\";\nelif [ -x /usr/bin/mogenerator ]; then\necho \"mogenerator exists in /usr/bin path\";\nMOGENERATOR_DIR=\"/usr/bin\";\nelse\necho \"mogenerator not found\"; exit 1;\nfi\n# $MOGENERATOR_DIR/mogenerator -m \"$DATA_MODEL_PACKAGE\" -M \"$MODELS_DIR/CoreData/Machine/\" -H \"$MODELS_DIR/CoreData/Human/\"\n# 如果是ARC工程，加上 --template-var arc=true就行了，即mogenerator命令换成：\n$MOGENERATOR_DIR/mogenerator --template-var arc=true -m \"$DATA_MODEL_PACKAGE\" -M \"$MODELS_DIR/CoreData/Machine/\" -H \"$MODELS_DIR/CoreData/Human/\"";
 		};
 		647A8DCB6F7F582FDFAA6A49 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -826,6 +827,7 @@
 				5754D0791C73122600709C4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		57B9A1D41C2132D1002AFD70 /* Build configuration list for PBXProject "CoreDataDemo" */ = {
 			isa = XCConfigurationList;
@@ -869,9 +871,10 @@
 		57B9A1E81C2132D1002AFD70 /* CoreDataDemo.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				5754D0931C7450EE00709C4E /* CoreDataDemo 2.xcdatamodel */,
 				57B9A1E91C2132D1002AFD70 /* CoreDataDemo.xcdatamodel */,
 			);
-			currentVersion = 57B9A1E91C2132D1002AFD70 /* CoreDataDemo.xcdatamodel */;
+			currentVersion = 5754D0931C7450EE00709C4E /* CoreDataDemo 2.xcdatamodel */;
 			path = CoreDataDemo.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
