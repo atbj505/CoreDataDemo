@@ -22,14 +22,14 @@
 
 /* Begin PBXBuildFile section */
 		0442A39E105B941B5C05F3EF /* libPods-CoreDataDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B3F868B46E2FCEC051BC925 /* libPods-CoreDataDemoTests.a */; };
-		573494C61C241E9C00A16AC4 /* Home+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 573494C31C241E9C00A16AC4 /* Home+CoreDataProperties.m */; };
-		573494C71C241E9C00A16AC4 /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = 573494C51C241E9C00A16AC4 /* Home.m */; };
-		573494CC1C241F7900A16AC4 /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 573494C91C241F7900A16AC4 /* Person+CoreDataProperties.m */; };
-		573494CD1C241F7900A16AC4 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 573494CB1C241F7900A16AC4 /* Person.m */; };
 		5754D0751C72FEA100709C4E /* EXTRuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5754D0711C72FEA100709C4E /* EXTRuntimeExtensions.m */; };
 		5754D0761C72FEA100709C4E /* MTLManagedObjectAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5754D0741C72FEA100709C4E /* MTLManagedObjectAdapter.m */; };
 		5754D07E1C731D7000709C4E /* HomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5754D07D1C731D7000709C4E /* HomeModel.m */; };
 		5754D0811C731E1900709C4E /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5754D0801C731E1900709C4E /* PersonModel.m */; };
+		5754D08E1C74233D00709C4E /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = 5754D0861C74233D00709C4E /* Home.m */; };
+		5754D08F1C74233D00709C4E /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 5754D0881C74233D00709C4E /* Person.m */; };
+		5754D0901C74233D00709C4E /* _Home.m in Sources */ = {isa = PBXBuildFile; fileRef = 5754D08B1C74233D00709C4E /* _Home.m */; };
+		5754D0911C74233D00709C4E /* _Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 5754D08D1C74233D00709C4E /* _Person.m */; };
 		57B9A1DE1C2132D1002AFD70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B9A1DD1C2132D1002AFD70 /* main.m */; };
 		57B9A1E11C2132D1002AFD70 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B9A1E01C2132D1002AFD70 /* AppDelegate.m */; };
 		57B9A1E41C2132D1002AFD70 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B9A1E31C2132D1002AFD70 /* ViewController.m */; };
@@ -64,14 +64,6 @@
 		0CFEC8FB716483ADB79CEB4B /* Pods-CoreDataDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreDataDemoTests/Pods-CoreDataDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		347CD1E75709E599DEB00E29 /* Pods-CoreDataDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreDataDemo/Pods-CoreDataDemo.release.xcconfig"; sourceTree = "<group>"; };
 		41C33F338685A45BFCEA7A32 /* Pods-CoreDataDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreDataDemo/Pods-CoreDataDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		573494C21C241E9C00A16AC4 /* Home+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Home+CoreDataProperties.h"; sourceTree = "<group>"; };
-		573494C31C241E9C00A16AC4 /* Home+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Home+CoreDataProperties.m"; sourceTree = "<group>"; };
-		573494C41C241E9C00A16AC4 /* Home.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
-		573494C51C241E9C00A16AC4 /* Home.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Home.m; sourceTree = "<group>"; };
-		573494C81C241F7900A16AC4 /* Person+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+CoreDataProperties.h"; sourceTree = "<group>"; };
-		573494C91C241F7900A16AC4 /* Person+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataProperties.m"; sourceTree = "<group>"; };
-		573494CA1C241F7900A16AC4 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		573494CB1C241F7900A16AC4 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		5754D06F1C72FEA100709C4E /* EXTKeyPathCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTKeyPathCoding.h; sourceTree = "<group>"; };
 		5754D0701C72FEA100709C4E /* EXTRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTRuntimeExtensions.h; sourceTree = "<group>"; };
 		5754D0711C72FEA100709C4E /* EXTRuntimeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTRuntimeExtensions.m; sourceTree = "<group>"; };
@@ -82,6 +74,14 @@
 		5754D07D1C731D7000709C4E /* HomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeModel.m; sourceTree = "<group>"; };
 		5754D07F1C731E1900709C4E /* PersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonModel.h; sourceTree = "<group>"; };
 		5754D0801C731E1900709C4E /* PersonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonModel.m; sourceTree = "<group>"; };
+		5754D0851C74233D00709C4E /* Home.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
+		5754D0861C74233D00709C4E /* Home.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Home.m; sourceTree = "<group>"; };
+		5754D0871C74233D00709C4E /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		5754D0881C74233D00709C4E /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		5754D08A1C74233D00709C4E /* _Home.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Home.h; sourceTree = "<group>"; };
+		5754D08B1C74233D00709C4E /* _Home.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Home.m; sourceTree = "<group>"; };
+		5754D08C1C74233D00709C4E /* _Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Person.h; sourceTree = "<group>"; };
+		5754D08D1C74233D00709C4E /* _Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Person.m; sourceTree = "<group>"; };
 		57B9A1D91C2132D1002AFD70 /* CoreDataDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B9A1DD1C2132D1002AFD70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		57B9A1DF1C2132D1002AFD70 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -170,6 +170,37 @@
 			path = extobjc;
 			sourceTree = "<group>";
 		};
+		5754D0831C74233D00709C4E /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				5754D0841C74233D00709C4E /* Human */,
+				5754D0891C74233D00709C4E /* Machine */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		5754D0841C74233D00709C4E /* Human */ = {
+			isa = PBXGroup;
+			children = (
+				5754D0851C74233D00709C4E /* Home.h */,
+				5754D0861C74233D00709C4E /* Home.m */,
+				5754D0871C74233D00709C4E /* Person.h */,
+				5754D0881C74233D00709C4E /* Person.m */,
+			);
+			path = Human;
+			sourceTree = "<group>";
+		};
+		5754D0891C74233D00709C4E /* Machine */ = {
+			isa = PBXGroup;
+			children = (
+				5754D08A1C74233D00709C4E /* _Home.h */,
+				5754D08B1C74233D00709C4E /* _Home.m */,
+				5754D08C1C74233D00709C4E /* _Person.h */,
+				5754D08D1C74233D00709C4E /* _Person.m */,
+			);
+			path = Machine;
+			sourceTree = "<group>";
+		};
 		57B9A1D01C2132D1002AFD70 = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +226,7 @@
 		57B9A1DB1C2132D1002AFD70 /* CoreDataDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5754D0831C74233D00709C4E /* CoreData */,
 				5754D06D1C72FEA100709C4E /* MTLManagedObjectAdapter */,
 				57B9A1DF1C2132D1002AFD70 /* AppDelegate.h */,
 				57B9A1E01C2132D1002AFD70 /* AppDelegate.m */,
@@ -202,16 +234,8 @@
 				57B9A1E31C2132D1002AFD70 /* ViewController.m */,
 				5754D07C1C731D7000709C4E /* HomeModel.h */,
 				5754D07D1C731D7000709C4E /* HomeModel.m */,
-				573494C41C241E9C00A16AC4 /* Home.h */,
-				573494C51C241E9C00A16AC4 /* Home.m */,
-				573494C21C241E9C00A16AC4 /* Home+CoreDataProperties.h */,
-				573494C31C241E9C00A16AC4 /* Home+CoreDataProperties.m */,
 				5754D07F1C731E1900709C4E /* PersonModel.h */,
 				5754D0801C731E1900709C4E /* PersonModel.m */,
-				573494CA1C241F7900A16AC4 /* Person.h */,
-				573494CB1C241F7900A16AC4 /* Person.m */,
-				573494C81C241F7900A16AC4 /* Person+CoreDataProperties.h */,
-				573494C91C241F7900A16AC4 /* Person+CoreDataProperties.m */,
 				57B9A1E51C2132D1002AFD70 /* Main.storyboard */,
 				57B9A1EB1C2132D1002AFD70 /* Assets.xcassets */,
 				57B9A1ED1C2132D1002AFD70 /* LaunchScreen.storyboard */,
@@ -272,6 +296,7 @@
 				57B9A1D71C2132D1002AFD70 /* Resources */,
 				647A8DCB6F7F582FDFAA6A49 /* Embed Pods Frameworks */,
 				A6B2307AFA59855D777AF152 /* Copy Pods Resources */,
+				5754D0821C74229600709C4E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -441,6 +466,19 @@
 			shellPath = /bin/sh;
 			shellScript = "#import path\nexport PATH=${PATH}:/usr/local/bin\n#import what we have in bash_profile\nsource ~/.bash_profile\n#check for oclint\nhash oclint &> /dev/null\nif [ $? -eq 1 ]; then\necho >&2 \"oclint not found, analyzing stopped\"\nexit 1\nfi\n\nhash xctool &> /dev/null\nif [ $? -eq 1 ]; then\necho >&2 \"xctool not found, analyzing stopped\"\nexit 1\nfi\n\ncd ${SRCROOT}\nxctool -workspace CoreDataDemo.xcworkspace -scheme CoreDataDemo clean\nxctool -workspace CoreDataDemo.xcworkspace -scheme CoreDataDemo -reporter json-compilation-database:compile_commands.json build\noclint-json-compilation-database \\\n-e Pods \\\n-- -rc=LONG_LINE=100 \\\n-rc=NCSS_METHOD=60 \\\n-rc=MINIMUM_CASES_IN_SWITCH=1 \\\n| sed 's/\\(.*\\.\\m\\{1,2\\}:[0-9]*:[0-9]*:\\)/\\1 warning:/'";
 		};
+		5754D0821C74229600709C4E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "MODELS_DIR=\"${PROJECT_DIR}/$PROJECT_NAME\"\nDATA_MODEL_PACKAGE=\"$MODELS_DIR/CoreDataDemo.xcdatamodeld/CoreDataDemo.xcdatamodel\"\n# - 替换相应的 xxxxx.xcdatamodeld名称\n\nif [ -x /usr/local/bin/mogenerator ]; then\necho \"mogenerator exists in /usr/local/bin path\";\nMOGENERATOR_DIR=\"/usr/local/bin\";\nelif [ -x /usr/bin/mogenerator ]; then\necho \"mogenerator exists in /usr/bin path\";\nMOGENERATOR_DIR=\"/usr/bin\";\nelse\necho \"mogenerator not found\"; exit 1;\nfi\n# $MOGENERATOR_DIR/mogenerator -m \"$DATA_MODEL_PACKAGE\" -M \"$MODELS_DIR/CoreData/Machine/\" -H \"$MODELS_DIR/CoreData/Human/\"\n# 如果是ARC工程，加上 --template-var arc=true就行了，即mogenerator命令换成：\n$MOGENERATOR_DIR/mogenerator --template-var arc=true -m \"$DATA_MODEL_PACKAGE\" -M \"$MODELS_DIR/CoreData/Machine/\" -H \"$MODELS_DIR/CoreData/Human/\"";
+		};
 		647A8DCB6F7F582FDFAA6A49 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -540,16 +578,16 @@
 			files = (
 				5754D0811C731E1900709C4E /* PersonModel.m in Sources */,
 				5754D0761C72FEA100709C4E /* MTLManagedObjectAdapter.m in Sources */,
+				5754D08F1C74233D00709C4E /* Person.m in Sources */,
 				57B9A1E41C2132D1002AFD70 /* ViewController.m in Sources */,
-				573494C71C241E9C00A16AC4 /* Home.m in Sources */,
-				573494CD1C241F7900A16AC4 /* Person.m in Sources */,
 				57B9A1EA1C2132D1002AFD70 /* CoreDataDemo.xcdatamodeld in Sources */,
 				5754D0751C72FEA100709C4E /* EXTRuntimeExtensions.m in Sources */,
 				57B9A1E11C2132D1002AFD70 /* AppDelegate.m in Sources */,
 				57B9A1DE1C2132D1002AFD70 /* main.m in Sources */,
 				5754D07E1C731D7000709C4E /* HomeModel.m in Sources */,
-				573494CC1C241F7900A16AC4 /* Person+CoreDataProperties.m in Sources */,
-				573494C61C241E9C00A16AC4 /* Home+CoreDataProperties.m in Sources */,
+				5754D08E1C74233D00709C4E /* Home.m in Sources */,
+				5754D0911C74233D00709C4E /* _Person.m in Sources */,
+				5754D0901C74233D00709C4E /* _Home.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
