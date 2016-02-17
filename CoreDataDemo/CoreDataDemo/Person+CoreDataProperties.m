@@ -16,5 +16,6 @@
 @dynamic age;
 @dynamic name;
 @dynamic home;
+@dynamic school;
 
 @end
