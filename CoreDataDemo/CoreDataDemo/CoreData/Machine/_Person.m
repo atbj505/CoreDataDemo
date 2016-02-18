@@ -8,7 +8,6 @@ const struct PersonAttributes PersonAttributes = {
 	.name = @"name",
 	.school = @"school",
 	.sex = @"sex",
-	.userId = @"userId",
 };
 
 const struct PersonRelationships PersonRelationships = {
@@ -98,8 +97,6 @@ const struct PersonRelationships PersonRelationships = {
 - (void)setPrimitiveSexValue:(BOOL)value_ {
 	[self setPrimitiveSex:[NSNumber numberWithBool:value_]];
 }
-
-@dynamic userId;
 
 @dynamic home;
 

@@ -83,6 +83,7 @@
 		5754D08C1C74233D00709C4E /* _Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Person.h; sourceTree = "<group>"; };
 		5754D08D1C74233D00709C4E /* _Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Person.m; sourceTree = "<group>"; };
 		5754D0931C7450EE00709C4E /* CoreDataDemo 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CoreDataDemo 2.xcdatamodel"; sourceTree = "<group>"; };
+		5754D09D1C756CB700709C4E /* CoreDataDemo 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CoreDataDemo 3.xcdatamodel"; sourceTree = "<group>"; };
 		57B9A1D91C2132D1002AFD70 /* CoreDataDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B9A1DD1C2132D1002AFD70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		57B9A1DF1C2132D1002AFD70 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -871,10 +872,11 @@
 		57B9A1E81C2132D1002AFD70 /* CoreDataDemo.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				5754D09D1C756CB700709C4E /* CoreDataDemo 3.xcdatamodel */,
 				5754D0931C7450EE00709C4E /* CoreDataDemo 2.xcdatamodel */,
 				57B9A1E91C2132D1002AFD70 /* CoreDataDemo.xcdatamodel */,
 			);
-			currentVersion = 5754D0931C7450EE00709C4E /* CoreDataDemo 2.xcdatamodel */;
+			currentVersion = 5754D09D1C756CB700709C4E /* CoreDataDemo 3.xcdatamodel */;
 			path = CoreDataDemo.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
