@@ -26,10 +26,10 @@
 		5754D0761C72FEA100709C4E /* MTLManagedObjectAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5754D0741C72FEA100709C4E /* MTLManagedObjectAdapter.m */; };
 		5754D07E1C731D7000709C4E /* HomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5754D07D1C731D7000709C4E /* HomeModel.m */; };
 		5754D0811C731E1900709C4E /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5754D0801C731E1900709C4E /* PersonModel.m */; };
-		5754D08E1C74233D00709C4E /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = 5754D0861C74233D00709C4E /* Home.m */; };
-		5754D08F1C74233D00709C4E /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 5754D0881C74233D00709C4E /* Person.m */; };
-		5754D0901C74233D00709C4E /* _Home.m in Sources */ = {isa = PBXBuildFile; fileRef = 5754D08B1C74233D00709C4E /* _Home.m */; };
-		5754D0911C74233D00709C4E /* _Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 5754D08D1C74233D00709C4E /* _Person.m */; };
+		5754D0A91C756D5600709C4E /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = 5754D0A11C756D5600709C4E /* Home.m */; };
+		5754D0AA1C756D5600709C4E /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 5754D0A31C756D5600709C4E /* Person.m */; };
+		5754D0AB1C756D5600709C4E /* _Home.m in Sources */ = {isa = PBXBuildFile; fileRef = 5754D0A61C756D5600709C4E /* _Home.m */; };
+		5754D0AC1C756D5600709C4E /* _Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 5754D0A81C756D5600709C4E /* _Person.m */; };
 		57B9A1DE1C2132D1002AFD70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B9A1DD1C2132D1002AFD70 /* main.m */; };
 		57B9A1E11C2132D1002AFD70 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B9A1E01C2132D1002AFD70 /* AppDelegate.m */; };
 		57B9A1E41C2132D1002AFD70 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B9A1E31C2132D1002AFD70 /* ViewController.m */; };
@@ -74,16 +74,16 @@
 		5754D07D1C731D7000709C4E /* HomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeModel.m; sourceTree = "<group>"; };
 		5754D07F1C731E1900709C4E /* PersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonModel.h; sourceTree = "<group>"; };
 		5754D0801C731E1900709C4E /* PersonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonModel.m; sourceTree = "<group>"; };
-		5754D0851C74233D00709C4E /* Home.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
-		5754D0861C74233D00709C4E /* Home.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Home.m; sourceTree = "<group>"; };
-		5754D0871C74233D00709C4E /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		5754D0881C74233D00709C4E /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
-		5754D08A1C74233D00709C4E /* _Home.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Home.h; sourceTree = "<group>"; };
-		5754D08B1C74233D00709C4E /* _Home.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Home.m; sourceTree = "<group>"; };
-		5754D08C1C74233D00709C4E /* _Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Person.h; sourceTree = "<group>"; };
-		5754D08D1C74233D00709C4E /* _Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Person.m; sourceTree = "<group>"; };
 		5754D0931C7450EE00709C4E /* CoreDataDemo 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CoreDataDemo 2.xcdatamodel"; sourceTree = "<group>"; };
 		5754D09D1C756CB700709C4E /* CoreDataDemo 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CoreDataDemo 3.xcdatamodel"; sourceTree = "<group>"; };
+		5754D0A01C756D5600709C4E /* Home.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
+		5754D0A11C756D5600709C4E /* Home.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Home.m; sourceTree = "<group>"; };
+		5754D0A21C756D5600709C4E /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		5754D0A31C756D5600709C4E /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		5754D0A51C756D5600709C4E /* _Home.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Home.h; sourceTree = "<group>"; };
+		5754D0A61C756D5600709C4E /* _Home.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Home.m; sourceTree = "<group>"; };
+		5754D0A71C756D5600709C4E /* _Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Person.h; sourceTree = "<group>"; };
+		5754D0A81C756D5600709C4E /* _Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Person.m; sourceTree = "<group>"; };
 		57B9A1D91C2132D1002AFD70 /* CoreDataDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B9A1DD1C2132D1002AFD70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		57B9A1DF1C2132D1002AFD70 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -172,33 +172,33 @@
 			path = extobjc;
 			sourceTree = "<group>";
 		};
-		5754D0831C74233D00709C4E /* CoreData */ = {
+		5754D09E1C756D5600709C4E /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				5754D0841C74233D00709C4E /* Human */,
-				5754D0891C74233D00709C4E /* Machine */,
+				5754D09F1C756D5600709C4E /* Human */,
+				5754D0A41C756D5600709C4E /* Machine */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
 		};
-		5754D0841C74233D00709C4E /* Human */ = {
+		5754D09F1C756D5600709C4E /* Human */ = {
 			isa = PBXGroup;
 			children = (
-				5754D0851C74233D00709C4E /* Home.h */,
-				5754D0861C74233D00709C4E /* Home.m */,
-				5754D0871C74233D00709C4E /* Person.h */,
-				5754D0881C74233D00709C4E /* Person.m */,
+				5754D0A01C756D5600709C4E /* Home.h */,
+				5754D0A11C756D5600709C4E /* Home.m */,
+				5754D0A21C756D5600709C4E /* Person.h */,
+				5754D0A31C756D5600709C4E /* Person.m */,
 			);
 			path = Human;
 			sourceTree = "<group>";
 		};
-		5754D0891C74233D00709C4E /* Machine */ = {
+		5754D0A41C756D5600709C4E /* Machine */ = {
 			isa = PBXGroup;
 			children = (
-				5754D08A1C74233D00709C4E /* _Home.h */,
-				5754D08B1C74233D00709C4E /* _Home.m */,
-				5754D08C1C74233D00709C4E /* _Person.h */,
-				5754D08D1C74233D00709C4E /* _Person.m */,
+				5754D0A51C756D5600709C4E /* _Home.h */,
+				5754D0A61C756D5600709C4E /* _Home.m */,
+				5754D0A71C756D5600709C4E /* _Person.h */,
+				5754D0A81C756D5600709C4E /* _Person.m */,
 			);
 			path = Machine;
 			sourceTree = "<group>";
@@ -228,7 +228,7 @@
 		57B9A1DB1C2132D1002AFD70 /* CoreDataDemo */ = {
 			isa = PBXGroup;
 			children = (
-				5754D0831C74233D00709C4E /* CoreData */,
+				5754D09E1C756D5600709C4E /* CoreData */,
 				5754D06D1C72FEA100709C4E /* MTLManagedObjectAdapter */,
 				57B9A1DF1C2132D1002AFD70 /* AppDelegate.h */,
 				57B9A1E01C2132D1002AFD70 /* AppDelegate.m */,
@@ -580,16 +580,16 @@
 			files = (
 				5754D0811C731E1900709C4E /* PersonModel.m in Sources */,
 				5754D0761C72FEA100709C4E /* MTLManagedObjectAdapter.m in Sources */,
-				5754D08F1C74233D00709C4E /* Person.m in Sources */,
+				5754D0AA1C756D5600709C4E /* Person.m in Sources */,
 				57B9A1E41C2132D1002AFD70 /* ViewController.m in Sources */,
 				57B9A1EA1C2132D1002AFD70 /* CoreDataDemo.xcdatamodeld in Sources */,
 				5754D0751C72FEA100709C4E /* EXTRuntimeExtensions.m in Sources */,
 				57B9A1E11C2132D1002AFD70 /* AppDelegate.m in Sources */,
 				57B9A1DE1C2132D1002AFD70 /* main.m in Sources */,
 				5754D07E1C731D7000709C4E /* HomeModel.m in Sources */,
-				5754D08E1C74233D00709C4E /* Home.m in Sources */,
-				5754D0911C74233D00709C4E /* _Person.m in Sources */,
-				5754D0901C74233D00709C4E /* _Home.m in Sources */,
+				5754D0A91C756D5600709C4E /* Home.m in Sources */,
+				5754D0AC1C756D5600709C4E /* _Person.m in Sources */,
+				5754D0AB1C756D5600709C4E /* _Home.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
