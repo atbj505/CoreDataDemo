@@ -876,7 +876,7 @@
 				5754D0931C7450EE00709C4E /* CoreDataDemo 2.xcdatamodel */,
 				57B9A1E91C2132D1002AFD70 /* CoreDataDemo.xcdatamodel */,
 			);
-			currentVersion = 5754D09D1C756CB700709C4E /* CoreDataDemo 3.xcdatamodel */;
+			currentVersion = 57B9A1E91C2132D1002AFD70 /* CoreDataDemo.xcdatamodel */;
 			path = CoreDataDemo.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

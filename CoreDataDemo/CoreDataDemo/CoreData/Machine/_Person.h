@@ -8,7 +8,6 @@ extern const struct PersonAttributes {
 	__unsafe_unretained NSString *name;
 	__unsafe_unretained NSString *school;
 	__unsafe_unretained NSString *sex;
-	__unsafe_unretained NSString *userId;
 } PersonAttributes;
 
 extern const struct PersonRelationships {
@@ -50,10 +49,6 @@ extern const struct PersonRelationships {
 
 //- (BOOL)validateSex:(id*)value_ error:(NSError**)error_;
 
-@property (nonatomic, strong) NSString* userId;
-
-//- (BOOL)validateUserId:(id*)value_ error:(NSError**)error_;
-
 @property (nonatomic, strong) Home *home;
 
 //- (BOOL)validateHome:(id*)value_ error:(NSError**)error_;
@@ -79,9 +74,6 @@ extern const struct PersonRelationships {
 
 - (BOOL)primitiveSexValue;
 - (void)setPrimitiveSexValue:(BOOL)value_;
-
-- (NSString*)primitiveUserId;
-- (void)setPrimitiveUserId:(NSString*)value;
 
 - (Home*)primitiveHome;
 - (void)setPrimitiveHome:(Home*)value;

@@ -17,8 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 //    [MagicalRecord setupCoreDataStack];
-    [MagicalRecord setupCoreDataStackWithStoreNamed:@"robert.sqlite"];
-    
+//    [MagicalRecord setupCoreDataStackWithStoreNamed:@"robert.sqlite"];
+    [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreNamed:@"robert.sqlite"];
     return YES;
 }
 

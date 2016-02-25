@@ -8,15 +8,17 @@
 
 #import "PersonModel.h"
 #import "HomeModel.h"
+#import "NSDictionary+MTLMappingAdditions.h"
 
 @implementation PersonModel
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
-    return @{
-             @"name" : @"name",
-             @"age" : @"age",
-             @"home" : @"home"
-             };
+//    return @{
+//             @"name" : @"name",
+//             @"age" : @"age",
+//             @"home" : @"home"
+//             };
+    return [NSDictionary mtl_identityPropertyMapWithModel:self.class];
 }
 
 #pragma mark - JSON Transformer
